@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.js"></script>
+</head>
+<body>
+    {% verbatim %}
+    <div class="container" id="orders_app">
+
+        <div class="btn btn-succes btn-lg" v-for="order in orders">
+            Описание: {{ order.description }}
+            Количество: {{ order.amount }}
+        </div>
+
+    </div>
+    {% endverbatim %}
+
+<script src="/static/app.js"></script>
+</body>
+</html>
